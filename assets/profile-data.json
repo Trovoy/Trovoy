@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T11:57:17.214Z",
+  "updatedAt": "2026-10-26T11:58:04.009Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -17,25 +17,25 @@
   ],
   "commits": [
     {
-      "sha": "73d73128a597b640f0903b37adeb468dc5218c2b",
       "repo": "Weibo_Checkin",
+      "sha": "73d73128a597b640f0903b37adeb468dc5218c2b",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/73d73128a597b640f0903b37adeb468dc5218c2b",
       "date": "2026-10-26T08:32:50Z",
-      "message": "重写为可自行部署的 Cloudflare 微博超话签到工具",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/73d73128a597b640f0903b37adeb468dc5218c2b"
+      "message": "重写为可自行部署的 Cloudflare 微博超话签到工具"
     },
     {
+      "repo": "f1-radio-translator",
       "sha": "9fa25409bcb137095211eb30de3b32d3a6edb124",
-      "repo": "f1-radio-translator",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/9fa25409bcb137095211eb30de3b32d3a6edb124",
       "date": "2026-10-04T14:16:28Z",
-      "message": "Revert \"Fix taskbar branding and relaunch identity for v1.0.3\"",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/9fa25409bcb137095211eb30de3b32d3a6edb124"
+      "message": "Revert \"Fix taskbar branding and relaunch identity for v1.0.3\""
     },
     {
-      "sha": "fccd54f39420dc543f0445f595e18520a70fde11",
       "repo": "f1-radio-translator",
+      "sha": "fccd54f39420dc543f0445f595e18520a70fde11",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/fccd54f39420dc543f0445f595e18520a70fde11",
       "date": "2026-10-04T14:13:01Z",
-      "message": "Fix taskbar branding and relaunch identity for v1.0.3",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/fccd54f39420dc543f0445f595e18520a70fde11"
+      "message": "Fix taskbar branding and relaunch identity for v1.0.3"
     }
   ]
 }
