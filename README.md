@@ -35,6 +35,14 @@
 
 </details>
 
+### 贡献足迹
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg">
+  <img alt="贪吃蛇沿着 Troy 的 GitHub 贡献记录前进" src="./assets/github-snake.svg" width="100%">
+</picture>
+
 ---
 
 <sub>代码之外：F1 · BLACKPINK 🖤🩷</sub>
