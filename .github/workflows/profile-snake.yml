@@ -1,4 +1,4 @@
-name: Update contribution snake
+name: Refresh GitHub profile
 
 on:
   schedule:
@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - .github/workflows/profile-snake.yml
+      - .github/profile/render.mjs
+      - .github/profile/templates/**
 
 concurrency:
   group: profile-snake
@@ -17,42 +19,47 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate light and dark animations
+      - name: Check out profile source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Generate contribution animation
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#b85e83&color_dots=#eff1f5,#ead7e1,#dba9bf,#bf7a99,#934f73
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#e6a2bd&color_dots=#161b22,#342331,#61354c,#9e5d7d,#d896b2
+            dist/raw-snake.svg?color_snake=#a2523e&color_dots=#e9e2d4,#edc7b3,#dba080,#b97558,#8b523d
 
-      - name: Publish generated SVGs
+      - name: Render public project cards and development log
+        run: node .github/profile/render.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Publish refreshed profile assets
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           script: |
             const fs = require('node:fs/promises');
             const { owner, repo } = context.repo;
-            const filenames = ['github-snake.svg', 'github-snake-dark.svg'];
-            const blobs = await Promise.all(filenames.map(async name => {
-              const content = await fs.readFile(`dist/${name}`, 'base64');
+            const files = JSON.parse(await fs.readFile('.github/profile/generated-files.json', 'utf8'));
+            if (!files.every(file => file === 'README.md' || /^assets\/[a-z0-9-]+\.(svg|json)$/.test(file))) {
+              throw new Error('Unexpected generated file path.');
+            }
+            const blobs = await Promise.all(files.map(async file => {
+              const content = await fs.readFile(file, 'base64');
               const { data } = await github.rest.git.createBlob({ owner, repo, content, encoding: 'base64' });
-              return { path: `assets/${name}`, mode: '100644', type: 'blob', sha: data.sha };
+              return { path: file, mode: '100644', type: 'blob', sha: data.sha };
             }));
-
             for (let attempt = 0; attempt < 3; attempt++) {
               const { data: ref } = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
               const { data: parent } = await github.rest.git.getCommit({ owner, repo, commit_sha: ref.object.sha });
               const { data: tree } = await github.rest.git.createTree({ owner, repo, base_tree: parent.tree.sha, tree: blobs });
-              if (tree.sha === parent.tree.sha) {
-                core.info('The contribution animations are already current.');
-                return;
-              }
+              if (tree.sha === parent.tree.sha) return;
               const { data: commit } = await github.rest.git.createCommit({
-                owner, repo, message: 'Update contribution snake animations',
-                tree: tree.sha, parents: [ref.object.sha]
+                owner, repo, message: 'Refresh public GitHub profile cards', tree: tree.sha, parents: [ref.object.sha]
               });
               try {
                 await github.rest.git.updateRef({ owner, repo, ref: 'heads/main', sha: commit.sha, force: false });
