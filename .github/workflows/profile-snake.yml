@@ -45,7 +45,7 @@ jobs:
             const fs = require('node:fs/promises');
             const { owner, repo } = context.repo;
             const files = JSON.parse(await fs.readFile('.github/profile/generated-files.json', 'utf8'));
-            if (!files.every(file => file === 'README.md' || /^assets\/[a-z0-9-]+\.(svg|json)$/.test(file))) {
+            if (!files.every(file => ['README.md', 'README.zh-CN.md'].includes(file) || /^assets\/[a-z0-9-]+\.(svg|json)$/.test(file))) {
               throw new Error('Unexpected generated file path.');
             }
             const blobs = await Promise.all(files.map(async file => {

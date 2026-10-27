@@ -49,8 +49,8 @@ for(const theme of ['dark','light']){
     const repo=data.repos.find(r=>r.name===featured[i]);
     if(!repo)throw new Error('Missing project metadata.');
     const last=data.commits.filter(c=>c.repo===repo.name).sort((a,b)=>new Date(b.date)-new Date(a.date))[0];
-    for(const mobile of [false,true]){
-      const name=`${keys[i]}${mobile?'-mobile':''}-${theme}.svg`;
+    for(const language of ['en','zh-CN'])for(const mobile of [false,true]){
+      const name=`${keys[i]}${language==='en'?'-en':''}${mobile?'-mobile':''}-${theme}.svg`;
       const svg=(await template(name)).replaceAll('{{STARS}}',String(repo.stargazers_count)).replaceAll('{{UPDATED}}',day(last.date)).replaceAll('{{STATUS_COLOR}}',new Date()-new Date(last.date)<30*86400000?'#548367':'#a99b85');
       await emit(name,svg);
     }
@@ -78,10 +78,24 @@ for(const theme of ['dark','light']){
 }
 
 function picture(key,alt,mobile=false){
-  return `<picture>\n${mobile?`  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/${key}-mobile-dark-transparent.svg">\n  <source media="(max-width: 600px)" srcset="./assets/${key}-mobile-light-transparent.svg">\n`:''}  <source media="(prefers-color-scheme: dark)" srcset="./assets/${key}-dark-transparent.svg">\n  <source media="(prefers-color-scheme: light)" srcset="./assets/${key}-light-transparent.svg">\n  <img alt="${escape(alt)}" src="./assets/${key}-dark.svg" width="100%">\n</picture>`;
+  const src=(theme,small=false)=>'./assets/'+key+(small?'-mobile':'')+'-'+theme+'-transparent.svg';
+  return '<picture>\n'+(mobile?'  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="'+src('dark',true)+'">\n  <source media="(max-width: 600px)" srcset="'+src('light',true)+'">\n':'')+'  <source media="(prefers-color-scheme: dark)" srcset="'+src('dark')+'">\n  <source media="(prefers-color-scheme: light)" srcset="'+src('light')+'">\n  <img alt="'+escape(alt)+'" src="'+src('light')+'" width="100%">\n</picture>';
 }
-const readme=`${picture('collage-header','Troy — I make small things. 猫猫、撕纸与黑胶的拼贴头图。')}\n\n<p align="center">\n  <a href="https://github.com/Trovoy?tab=repositories"><code>REPOSITORIES</code></a> &nbsp; / &nbsp;\n  <a href="https://github.com/Trovoy?tab=overview"><code>ACTIVITY</code></a> &nbsp; / &nbsp;\n  <a href="https://lisalove.me"><code>BLOG</code></a>\n</p>\n\n<a href="https://github.com/Trovoy/Weibo_Checkin">\n${picture('weibo','Weibo Check-in：扫码登录、超话等级读取与定时签到。TypeScript、Cloudflare Workers、Durable Objects。点击查看项目。',true)}\n</a>\n\n<a href="https://github.com/Trovoy/f1-radio-translator">\n${picture('f1','F1 Radio Translator：本地 OCR 识别 MultiViewer 无线电转录，提供英中双语翻译。PowerShell、C#、Python、WPF。点击查看项目。',true)}\n</a>\n\n<a href="https://github.com/Trovoy?tab=overview">\n${picture('activity','近期公开提交：'+recent.map(c=>`${c.repo} · ${c.message} · ${day(c.date)}`).join('；'),true)}\n</a>\n\n${picture('contribution-trail','GitHub 贡献贪吃蛇：真实贡献记录，纸质边框，每日更新。')}\n\n<p align="center"><sub>小工具，慢慢做。 / Building small tools.</sub></p>\n`;
-await fs.writeFile(path.join(root,'README.md'),readme);written.push('README.md');
+for(const language of ['en','zh-CN']){
+  const en=language==='en';
+  const nav=en?'**English** | [简体中文](README.zh-CN.md)':'[English](README.md) | **简体中文**';
+  const weibo=en?'Self-hosted Weibo and NodeSeek check-ins on Cloudflare Workers. Open the repository.':'微博与 NodeSeek 自托管签到工作台。点击查看项目。';
+  const f1=en?'F1 Radio Translator: local OCR for MultiViewer radio transcripts and English–Chinese translation. Open the repository.':'F1 Radio Translator：本地 OCR 识别 MultiViewer 无线电转录，提供英中双语翻译。点击查看项目。';
+  const activity=(en?'Recent public commits: ':'近期公开提交：')+recent.map(c=>c.repo+' · '+c.message+' · '+day(c.date)).join('; ');
+  const blocks=[nav,picture('collage-header','Troy — I make small things.'),'<p align="center">\n  <a href="https://github.com/Trovoy?tab=repositories"><code>REPOSITORIES</code></a> &nbsp; / &nbsp;\n  <a href="https://github.com/Trovoy?tab=overview"><code>ACTIVITY</code></a> &nbsp; / &nbsp;\n  <a href="https://lisalove.me"><code>BLOG</code></a>\n</p>',
+    '<a href="https://github.com/Trovoy/Weibo_Checkin">\n'+picture('weibo'+(en?'-en':''),weibo,true)+'\n</a>',
+    '<a href="https://github.com/Trovoy/f1-radio-translator">\n'+picture('f1'+(en?'-en':''),f1,true)+'\n</a>',
+    '<a href="https://github.com/Trovoy?tab=overview">\n'+picture('activity',activity,true)+'\n</a>',
+    picture('contribution-trail',en?'GitHub contribution snake, refreshed daily.':'GitHub 贡献贪吃蛇，每日更新。'),
+    '<p align="center"><sub>'+(en?'Building small tools.':'小工具，慢慢做。')+'</sub></p>'];
+  const name=en?'README.md':'README.zh-CN.md';
+  await fs.writeFile(path.join(root,name),blocks.join('\n\n')+'\n');written.push(name);
+}
 await emit('profile-data.json',JSON.stringify({updatedAt:new Date().toISOString(),source:'Public GitHub REST API',projects:data.repos.map(r=>({name:r.name,url:r.html_url,stars:r.stargazers_count,language:r.language})),commits:recent},null,2)+'\n');
 await fs.writeFile(path.join(root,'.github/profile/generated-files.json'),JSON.stringify(written,null,2));
 console.log(`Rendered ${written.length} files from owned public GitHub repositories.`);
