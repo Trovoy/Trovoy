@@ -32,7 +32,11 @@ if(recent.length!==3)throw new Error('Three public commits are required to rende
 const output=path.join(root,'assets');
 await fs.mkdir(output,{recursive:true});
 const written=[];
-async function emit(name,content){await fs.writeFile(path.join(output,name),content);written.push(`assets/${name}`)}
+async function emit(name,content){
+  // A new asset path also invalidates GitHub's cached opaque SVGs.
+  const target=name.endsWith('.svg')?name.replace('.svg','-transparent.svg'):name;
+  await fs.writeFile(path.join(output,target),content);written.push(`assets/${target}`);
+}
 async function template(name){return fs.readFile(path.join(templates,name),'utf8')}
 function wrapText(str,maxWidth,size){
   const lines=[];let line='',width=0;
@@ -74,7 +78,7 @@ for(const theme of ['dark','light']){
 }
 
 function picture(key,alt,mobile=false){
-  return `<picture>\n${mobile?`  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/${key}-mobile-dark.svg?v=transparent-v1">\n  <source media="(max-width: 600px)" srcset="./assets/${key}-mobile-light.svg?v=transparent-v1">\n`:''}  <source media="(prefers-color-scheme: dark)" srcset="./assets/${key}-dark.svg?v=transparent-v1">\n  <source media="(prefers-color-scheme: light)" srcset="./assets/${key}-light.svg?v=transparent-v1">\n  <img alt="${escape(alt)}" src="./assets/${key}-dark.svg" width="100%">\n</picture>`;
+  return `<picture>\n${mobile?`  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/${key}-mobile-dark-transparent.svg">\n  <source media="(max-width: 600px)" srcset="./assets/${key}-mobile-light-transparent.svg">\n`:''}  <source media="(prefers-color-scheme: dark)" srcset="./assets/${key}-dark-transparent.svg">\n  <source media="(prefers-color-scheme: light)" srcset="./assets/${key}-light-transparent.svg">\n  <img alt="${escape(alt)}" src="./assets/${key}-dark.svg" width="100%">\n</picture>`;
 }
 const readme=`${picture('collage-header','Troy — I make small things. 猫猫、撕纸与黑胶的拼贴头图。')}\n\n<p align="center">\n  <a href="https://github.com/Trovoy?tab=repositories"><code>REPOSITORIES</code></a> &nbsp; / &nbsp;\n  <a href="https://github.com/Trovoy?tab=overview"><code>ACTIVITY</code></a> &nbsp; / &nbsp;\n  <a href="https://lisalove.me"><code>BLOG</code></a>\n</p>\n\n<a href="https://github.com/Trovoy/Weibo_Checkin">\n${picture('weibo','Weibo Check-in：扫码登录、超话等级读取与定时签到。TypeScript、Cloudflare Workers、Durable Objects。点击查看项目。',true)}\n</a>\n\n<a href="https://github.com/Trovoy/f1-radio-translator">\n${picture('f1','F1 Radio Translator：本地 OCR 识别 MultiViewer 无线电转录，提供英中双语翻译。PowerShell、C#、Python、WPF。点击查看项目。',true)}\n</a>\n\n<a href="https://github.com/Trovoy?tab=overview">\n${picture('activity','近期公开提交：'+recent.map(c=>`${c.repo} · ${c.message} · ${day(c.date)}`).join('；'),true)}\n</a>\n\n${picture('contribution-trail','GitHub 贡献贪吃蛇：真实贡献记录，纸质边框，每日更新。')}\n\n<p align="center"><sub>小工具，慢慢做。 / Building small tools.</sub></p>\n`;
 await fs.writeFile(path.join(root,'README.md'),readme);written.push('README.md');
