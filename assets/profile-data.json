@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T11:58:04.009Z",
+  "updatedAt": "2026-10-27T05:06:33.446Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -18,24 +18,24 @@
   "commits": [
     {
       "repo": "Weibo_Checkin",
-      "sha": "73d73128a597b640f0903b37adeb468dc5218c2b",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/73d73128a597b640f0903b37adeb468dc5218c2b",
-      "date": "2026-10-26T08:32:50Z",
-      "message": "重写为可自行部署的 Cloudflare 微博超话签到工具"
+      "sha": "e457aa6b6d9ddd452a12d6662750767272dd4f4c",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/e457aa6b6d9ddd452a12d6662750767272dd4f4c",
+      "date": "2026-10-26T13:42:33Z",
+      "message": "style: refine recent check-in chart (#6)"
     },
     {
-      "repo": "f1-radio-translator",
-      "sha": "9fa25409bcb137095211eb30de3b32d3a6edb124",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/9fa25409bcb137095211eb30de3b32d3a6edb124",
-      "date": "2026-10-04T14:16:28Z",
-      "message": "Revert \"Fix taskbar branding and relaunch identity for v1.0.3\""
+      "repo": "Weibo_Checkin",
+      "sha": "25cb02e96defb92d5edddc30fd60531597a6980d",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/25cb02e96defb92d5edddc30fd60531597a6980d",
+      "date": "2026-10-26T13:35:31Z",
+      "message": "feat: add recent check-in statistics switch (#5)"
     },
     {
-      "repo": "f1-radio-translator",
-      "sha": "fccd54f39420dc543f0445f595e18520a70fde11",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/fccd54f39420dc543f0445f595e18520a70fde11",
-      "date": "2026-10-04T14:13:01Z",
-      "message": "Fix taskbar branding and relaunch identity for v1.0.3"
+      "repo": "Weibo_Checkin",
+      "sha": "09f43a8db9575171fd0194d89c6bcd2fd5e7119e",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/09f43a8db9575171fd0194d89c6bcd2fd5e7119e",
+      "date": "2026-10-26T13:24:36Z",
+      "message": "feat: visualize daily check-in progress on overview (#4)"
     }
   ]
 }

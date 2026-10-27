@@ -36,7 +36,7 @@
   <source media="(max-width: 600px)" srcset="./assets/activity-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="近期公开提交：Weibo_Checkin · 重写为可自行部署的 Cloudflare 微博超话签到工具 · 2026-10-26；f1-radio-translator · Revert &quot;Fix taskbar branding and relaunch identity for v1.0.3&quot; · 2026-10-04；f1-radio-translator · Fix taskbar branding and relaunch identity for v1.0.3 · 2026-10-04" src="./assets/activity-dark.svg" width="100%">
+  <img alt="近期公开提交：Weibo_Checkin · style: refine recent check-in chart (#6) · 2026-10-26；Weibo_Checkin · feat: add recent check-in statistics switch (#5) · 2026-10-26；Weibo_Checkin · feat: visualize daily check-in progress on overview (#4) · 2026-10-26" src="./assets/activity-dark.svg" width="100%">
 </picture>
 </a>
 
