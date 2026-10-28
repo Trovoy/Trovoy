@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T05:26:36.631Z",
+  "updatedAt": "2026-10-28T05:43:37.798Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -18,24 +18,24 @@
   "commits": [
     {
       "repo": "Weibo_Checkin",
-      "sha": "e457aa6b6d9ddd452a12d6662750767272dd4f4c",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/e457aa6b6d9ddd452a12d6662750767272dd4f4c",
-      "date": "2026-10-26T13:42:33Z",
-      "message": "style: refine recent check-in chart (#6)"
+      "sha": "5295e5f91d78300780e710eeea5ef9ffc3d450df",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/5295e5f91d78300780e710eeea5ef9ffc3d450df",
+      "date": "2026-10-28T04:48:28Z",
+      "message": "Prevent touch smart zoom and avoid layout-driven menu animations (#13)"
     },
     {
       "repo": "Weibo_Checkin",
-      "sha": "25cb02e96defb92d5edddc30fd60531597a6980d",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/25cb02e96defb92d5edddc30fd60531597a6980d",
-      "date": "2026-10-26T13:35:31Z",
-      "message": "feat: add recent check-in statistics switch (#5)"
+      "sha": "cdc568a4b346a3bac594680cdae10dc68b0539e6",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/cdc568a4b346a3bac594680cdae10dc68b0539e6",
+      "date": "2026-10-28T04:34:18Z",
+      "message": "Add calendar check logo and Safari icons; replace emoji arrows with SVG (#12)"
     },
     {
       "repo": "Weibo_Checkin",
-      "sha": "09f43a8db9575171fd0194d89c6bcd2fd5e7119e",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/09f43a8db9575171fd0194d89c6bcd2fd5e7119e",
-      "date": "2026-10-26T13:24:36Z",
-      "message": "feat: visualize daily check-in progress on overview (#4)"
+      "sha": "f30a88363a427f65a9b3ad5815e332f38fb0286a",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/f30a88363a427f65a9b3ad5815e332f38fb0286a",
+      "date": "2026-10-28T04:21:36Z",
+      "message": "Fix mobile layout overflow and add compact navigation (#11)"
     }
   ]
 }

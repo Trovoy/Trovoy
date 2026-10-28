@@ -38,7 +38,7 @@
   <source media="(max-width: 600px)" srcset="./assets/activity-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light-transparent.svg">
-  <img alt="近期公开提交：Weibo_Checkin · style: refine recent check-in chart (#6) · 2026-10-26; Weibo_Checkin · feat: add recent check-in statistics switch (#5) · 2026-10-26; Weibo_Checkin · feat: visualize daily check-in progress on overview (#4) · 2026-10-26" src="./assets/activity-light-transparent.svg" width="100%">
+  <img alt="近期公开提交：Weibo_Checkin · Prevent touch smart zoom and avoid layout-driven menu animations (#13) · 2026-10-28; Weibo_Checkin · Add calendar check logo and Safari icons; replace emoji arrows with SVG (#12) · 2026-10-28; Weibo_Checkin · Fix mobile layout overflow and add compact navigation (#11) · 2026-10-28" src="./assets/activity-light-transparent.svg" width="100%">
 </picture>
 </a>
 
