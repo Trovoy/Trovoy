@@ -38,7 +38,7 @@
   <source media="(max-width: 600px)" srcset="./assets/activity-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light-transparent.svg">
-  <img alt="Recent public commits: Weibo_Checkin · Prevent touch smart zoom and avoid layout-driven menu animations (#13) · 2026-10-28; Weibo_Checkin · Add calendar check logo and Safari icons; replace emoji arrows with SVG (#12) · 2026-10-28; Weibo_Checkin · Fix mobile layout overflow and add compact navigation (#11) · 2026-10-28" src="./assets/activity-light-transparent.svg" width="100%">
+  <img alt="Recent public commits: Weibo_Checkin · Move Weibo details into a dedicated platform page (#17) · 2026-10-28; Weibo_Checkin · Refine workspace footer and appearance toolbar controls (#16) · 2026-10-28; Weibo_Checkin · Add dashboard light, dark and system appearance modes (#15) · 2026-10-28" src="./assets/activity-light-transparent.svg" width="100%">
 </picture>
 </a>
 

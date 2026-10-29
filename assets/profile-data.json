@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T05:43:37.798Z",
+  "updatedAt": "2026-10-29T05:49:51.167Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -18,24 +18,24 @@
   "commits": [
     {
       "repo": "Weibo_Checkin",
-      "sha": "5295e5f91d78300780e710eeea5ef9ffc3d450df",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/5295e5f91d78300780e710eeea5ef9ffc3d450df",
-      "date": "2026-10-28T04:48:28Z",
-      "message": "Prevent touch smart zoom and avoid layout-driven menu animations (#13)"
+      "sha": "a78d1f64ecdee519e75c0c9c72db6ffaadb50f91",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/a78d1f64ecdee519e75c0c9c72db6ffaadb50f91",
+      "date": "2026-10-28T06:50:20Z",
+      "message": "Move Weibo details into a dedicated platform page (#17)"
     },
     {
       "repo": "Weibo_Checkin",
-      "sha": "cdc568a4b346a3bac594680cdae10dc68b0539e6",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/cdc568a4b346a3bac594680cdae10dc68b0539e6",
-      "date": "2026-10-28T04:34:18Z",
-      "message": "Add calendar check logo and Safari icons; replace emoji arrows with SVG (#12)"
+      "sha": "3954b7018d0f81d039ef9cbc6e50a90a1eb786ad",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/3954b7018d0f81d039ef9cbc6e50a90a1eb786ad",
+      "date": "2026-10-28T06:44:43Z",
+      "message": "Refine workspace footer and appearance toolbar controls (#16)"
     },
     {
       "repo": "Weibo_Checkin",
-      "sha": "f30a88363a427f65a9b3ad5815e332f38fb0286a",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/f30a88363a427f65a9b3ad5815e332f38fb0286a",
-      "date": "2026-10-28T04:21:36Z",
-      "message": "Fix mobile layout overflow and add compact navigation (#11)"
+      "sha": "31815992e8dd028d72e169889cff064b506621ee",
+      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/31815992e8dd028d72e169889cff064b506621ee",
+      "date": "2026-10-28T06:35:39Z",
+      "message": "Add dashboard light, dark and system appearance modes (#15)"
     }
   ]
 }
