@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T06:02:13.762Z",
+  "updatedAt": "2026-11-09T06:20:11.259Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -12,30 +12,30 @@
       "name": "f1-radio-translator",
       "url": "https://github.com/Trovoy/f1-radio-translator",
       "stars": 1,
-      "language": "PowerShell"
+      "language": "Rust"
     }
   ],
   "commits": [
     {
-      "repo": "Weibo_Checkin",
-      "sha": "a78d1f64ecdee519e75c0c9c72db6ffaadb50f91",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/a78d1f64ecdee519e75c0c9c72db6ffaadb50f91",
-      "date": "2026-10-28T06:50:20Z",
-      "message": "Move Weibo details into a dedicated platform page (#17)"
+      "repo": "f1-radio-translator",
+      "sha": "38aca40a9787186d91222ef49d039d29f4e91b45",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/38aca40a9787186d91222ef49d039d29f4e91b45",
+      "date": "2026-11-09T06:06:28Z",
+      "message": "Match the installer name used in the release"
     },
     {
-      "repo": "Weibo_Checkin",
-      "sha": "3954b7018d0f81d039ef9cbc6e50a90a1eb786ad",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/3954b7018d0f81d039ef9cbc6e50a90a1eb786ad",
-      "date": "2026-10-28T06:44:43Z",
-      "message": "Refine workspace footer and appearance toolbar controls (#16)"
+      "repo": "f1-radio-translator",
+      "sha": "443606ee2d0015515a37d2617886e67201d7c0da",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/443606ee2d0015515a37d2617886e67201d7c0da",
+      "date": "2026-11-09T06:06:06Z",
+      "message": "Release 2.0: replace the PowerShell app with the Tauri rewrite"
     },
     {
-      "repo": "Weibo_Checkin",
-      "sha": "31815992e8dd028d72e169889cff064b506621ee",
-      "url": "https://github.com/Trovoy/Weibo_Checkin/commit/31815992e8dd028d72e169889cff064b506621ee",
-      "date": "2026-10-28T06:35:39Z",
-      "message": "Add dashboard light, dark and system appearance modes (#15)"
+      "repo": "f1-radio-translator",
+      "sha": "6fcbb3e8712d117efee74fff94ccd596aaba54ba",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/6fcbb3e8712d117efee74fff94ccd596aaba54ba",
+      "date": "2026-11-09T05:40:30Z",
+      "message": "Show live speed of the built-in local model"
     }
   ]
 }
