@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T06:31:35.447Z",
+  "updatedAt": "2026-11-10T07:19:30.445Z",
   "source": "Public GitHub REST API",
   "projects": [
     {
@@ -18,24 +18,24 @@
   "commits": [
     {
       "repo": "f1-radio-translator",
-      "sha": "38aca40a9787186d91222ef49d039d29f4e91b45",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/38aca40a9787186d91222ef49d039d29f4e91b45",
-      "date": "2026-11-09T06:06:28Z",
-      "message": "Match the installer name used in the release"
+      "sha": "5afea049aa45015f9c11d2adb4ac927520389d45",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/5afea049aa45015f9c11d2adb4ac927520389d45",
+      "date": "2026-11-09T16:43:15Z",
+      "message": "Visual alignment pass across the app"
     },
     {
       "repo": "f1-radio-translator",
-      "sha": "443606ee2d0015515a37d2617886e67201d7c0da",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/443606ee2d0015515a37d2617886e67201d7c0da",
-      "date": "2026-11-09T06:06:06Z",
-      "message": "Release 2.0: replace the PowerShell app with the Tauri rewrite"
+      "sha": "aeeae27cec851b7240da19b0a5faeef5e738bb51",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/aeeae27cec851b7240da19b0a5faeef5e738bb51",
+      "date": "2026-11-09T11:53:54Z",
+      "message": "Show the service order as a draggable live topology"
     },
     {
       "repo": "f1-radio-translator",
-      "sha": "6fcbb3e8712d117efee74fff94ccd596aaba54ba",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/6fcbb3e8712d117efee74fff94ccd596aaba54ba",
-      "date": "2026-11-09T05:40:30Z",
-      "message": "Show live speed of the built-in local model"
+      "sha": "179659756fb8454baeb6416d44b638d7fb31a3ad",
+      "url": "https://github.com/Trovoy/f1-radio-translator/commit/179659756fb8454baeb6416d44b638d7fb31a3ad",
+      "date": "2026-11-09T11:48:26Z",
+      "message": "Sequence sidebar labels around the rail animation"
     }
   ]
 }

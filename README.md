@@ -38,7 +38,7 @@
   <source media="(max-width: 600px)" srcset="./assets/activity-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light-transparent.svg">
-  <img alt="Recent public commits: f1-radio-translator · Match the installer name used in the release · 2026-11-09; f1-radio-translator · Release 2.0: replace the PowerShell app with the Tauri rewrite · 2026-11-09; f1-radio-translator · Show live speed of the built-in local model · 2026-11-09" src="./assets/activity-light-transparent.svg" width="100%">
+  <img alt="Recent public commits: f1-radio-translator · Visual alignment pass across the app · 2026-11-10; f1-radio-translator · Show the service order as a draggable live topology · 2026-11-09; f1-radio-translator · Sequence sidebar labels around the rail animation · 2026-11-09" src="./assets/activity-light-transparent.svg" width="100%">
 </picture>
 </a>
 
