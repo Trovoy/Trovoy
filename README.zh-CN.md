@@ -73,7 +73,7 @@
   <source media="(max-width: 600px)" srcset="./assets/numbers-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/numbers-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/numbers-light-transparent.svg">
-  <img alt="近 12 个月：455 次贡献，34 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
+  <img alt="近 12 个月：456 次贡献，34 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
 </picture>
 
 <p align="center"><sub>小工具，慢慢做。</sub></p>
