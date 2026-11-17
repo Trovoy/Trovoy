@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T07:55:39.979Z",
-  "source": "Public GitHub REST API",
+  "updatedAt": "2026-11-17T10:44:10.308Z",
+  "source": "Public GitHub REST and GraphQL APIs",
   "projects": [
     {
       "name": "Weibo_Checkin",
@@ -13,29 +13,49 @@
       "url": "https://github.com/Trovoy/f1-radio-translator",
       "stars": 1,
       "language": "Rust"
+    },
+    {
+      "name": "afterglow",
+      "url": "https://github.com/Trovoy/afterglow",
+      "stars": 2,
+      "language": null
     }
   ],
   "commits": [
     {
-      "repo": "f1-radio-translator",
-      "sha": "5afea049aa45015f9c11d2adb4ac927520389d45",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/5afea049aa45015f9c11d2adb4ac927520389d45",
-      "date": "2026-11-09T16:43:15Z",
-      "message": "Visual alignment pass across the app"
+      "repo": "afterglow",
+      "sha": "2e34ddfa769d385f2ffba4f3933b91b26389cee9",
+      "url": "https://github.com/Trovoy/afterglow/commit/2e34ddfa769d385f2ffba4f3933b91b26389cee9",
+      "date": "2026-11-15T04:58:02Z",
+      "message": "0.4.3：新手引导、一键诊断、手机更新固件、新安装程序；GitHub 只保留零件名称"
     },
     {
-      "repo": "f1-radio-translator",
-      "sha": "aeeae27cec851b7240da19b0a5faeef5e738bb51",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/aeeae27cec851b7240da19b0a5faeef5e738bb51",
-      "date": "2026-11-09T11:53:54Z",
-      "message": "Show the service order as a draggable live topology"
+      "repo": "afterglow",
+      "sha": "87507cdac047dafd5a3b70c9ce3760d5d44b6d06",
+      "url": "https://github.com/Trovoy/afterglow/commit/87507cdac047dafd5a3b70c9ce3760d5d44b6d06",
+      "date": "2026-11-14T14:24:17Z",
+      "message": "0.4.2：修复下载后打不开的问题，改用单文件安装程序"
     },
     {
-      "repo": "f1-radio-translator",
-      "sha": "179659756fb8454baeb6416d44b638d7fb31a3ad",
-      "url": "https://github.com/Trovoy/f1-radio-translator/commit/179659756fb8454baeb6416d44b638d7fb31a3ad",
-      "date": "2026-11-09T11:48:26Z",
-      "message": "Sequence sidebar labels around the rail animation"
+      "repo": "afterglow",
+      "sha": "6a288c9872ccf1c63380a27bb54a5bf73318a017",
+      "url": "https://github.com/Trovoy/afterglow/commit/6a288c9872ccf1c63380a27bb54a5bf73318a017",
+      "date": "2026-11-14T11:53:54Z",
+      "message": "首次公开发布：Afterglow Studio 0.4.1 / 固件 0.9.2"
     }
-  ]
+  ],
+  "now": {
+    "repo": "afterglow",
+    "url": "https://github.com/Trovoy/afterglow",
+    "sha": "2e34ddfa769d385f2ffba4f3933b91b26389cee9",
+    "date": "2026-11-15T04:58:02Z",
+    "message": "0.4.3：新手引导、一键诊断、手机更新固件、新安装程序；GitHub 只保留零件名称",
+    "week": 3
+  },
+  "year": {
+    "contributions": 454,
+    "active": 33,
+    "longest": 20,
+    "stars": 43
+  }
 }
