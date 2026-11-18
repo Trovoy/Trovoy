@@ -18,7 +18,7 @@
   <source media="(max-width: 600px)" srcset="./assets/now-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/now-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/now-light-transparent.svg">
-  <img alt="正在做：afterglow——0.4.3：新手引导、一键诊断、手机更新固件、新安装程序；GitHub 只保留零件名称（2026-11-15）。" src="./assets/now-light-transparent.svg" width="100%">
+  <img alt="正在做：afterglow——开源：固件、手机控制页面和 Afterglow Studio 源代码按 MIT 许可证发布（2026-11-18）。" src="./assets/now-light-transparent.svg" width="100%">
 </picture>
 </a>
 
@@ -58,7 +58,7 @@
   <source media="(max-width: 600px)" srcset="./assets/activity-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light-transparent.svg">
-  <img alt="近期公开提交：afterglow · 0.4.3：新手引导、一键诊断、手机更新固件、新安装程序；GitHub 只保留零件名称 · 2026-11-15; afterglow · 0.4.2：修复下载后打不开的问题，改用单文件安装程序 · 2026-11-14; afterglow · 首次公开发布：Afterglow Studio 0.4.1 / 固件 0.9.2 · 2026-11-14" src="./assets/activity-light-transparent.svg" width="100%">
+  <img alt="近期公开提交：afterglow · 开源：固件、手机控制页面和 Afterglow Studio 源代码按 MIT 许可证发布 · 2026-11-18; afterglow · 0.4.3：新手引导、一键诊断、手机更新固件、新安装程序；GitHub 只保留零件名称 · 2026-11-15; afterglow · 0.4.2：修复下载后打不开的问题，改用单文件安装程序 · 2026-11-14" src="./assets/activity-light-transparent.svg" width="100%">
 </picture>
 </a>
 
@@ -73,7 +73,7 @@
   <source media="(max-width: 600px)" srcset="./assets/numbers-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/numbers-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/numbers-light-transparent.svg">
-  <img alt="近 12 个月：456 次贡献，34 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
+  <img alt="近 12 个月：457 次贡献，35 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
 </picture>
 
 <p align="center"><sub>小工具，慢慢做。</sub></p>
