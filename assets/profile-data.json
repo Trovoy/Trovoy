@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T07:29:47.237Z",
+  "updatedAt": "2026-11-21T07:09:34.613Z",
   "source": "Public GitHub REST and GraphQL APIs",
   "projects": [
     {
@@ -45,16 +45,16 @@
     }
   ],
   "now": {
-    "repo": "afterglow",
-    "url": "https://github.com/Trovoy/afterglow",
-    "sha": "fbee44a2146d08f722279622739efdad098e573f",
-    "date": "2026-11-18T06:06:57Z",
-    "message": "开源：固件、手机控制页面和 Afterglow Studio 源代码按 MIT 许可证发布",
-    "week": 4
+    "repo": "Trowoy-Rules",
+    "url": "https://github.com/Trovoy/Trowoy-Rules",
+    "sha": "f364e285d99129cee637a03d4219e3f0b6f1a0fc",
+    "date": "2026-11-20T14:31:56Z",
+    "message": "Review Claude routing reference and add registered network supplements",
+    "week": 1
   },
   "year": {
-    "contributions": 457,
-    "active": 35,
+    "contributions": 458,
+    "active": 36,
     "longest": 20,
     "stars": 43
   }

@@ -12,13 +12,13 @@
   <a href="https://lisalove.me"><code>BLOG</code></a>
 </p>
 
-<a href="https://github.com/Trovoy/afterglow">
+<a href="https://github.com/Trovoy/Trowoy-Rules">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/now-mobile-dark-transparent.svg">
   <source media="(max-width: 600px)" srcset="./assets/now-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/now-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/now-light-transparent.svg">
-  <img alt="Now building: afterglow — 开源：固件、手机控制页面和 Afterglow Studio 源代码按 MIT 许可证发布 (2026-11-18, 4 commits this week)." src="./assets/now-light-transparent.svg" width="100%">
+  <img alt="Now building: Trowoy-Rules — Review Claude routing reference and add registered network supplements (2026-11-20, 1 commit this week)." src="./assets/now-light-transparent.svg" width="100%">
 </picture>
 </a>
 
@@ -73,7 +73,7 @@
   <source media="(max-width: 600px)" srcset="./assets/numbers-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/numbers-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/numbers-light-transparent.svg">
-  <img alt="Last 12 months: 457 contributions, 35 active days, longest streak 20 days, 43 stars earned." src="./assets/numbers-light-transparent.svg" width="100%">
+  <img alt="Last 12 months: 458 contributions, 36 active days, longest streak 20 days, 43 stars earned." src="./assets/numbers-light-transparent.svg" width="100%">
 </picture>
 
 <p align="center"><sub>Building small tools.</sub></p>

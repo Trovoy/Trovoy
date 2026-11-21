@@ -12,13 +12,13 @@
   <a href="https://lisalove.me"><code>BLOG</code></a>
 </p>
 
-<a href="https://github.com/Trovoy/afterglow">
+<a href="https://github.com/Trovoy/Trowoy-Rules">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/now-mobile-dark-transparent.svg">
   <source media="(max-width: 600px)" srcset="./assets/now-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/now-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/now-light-transparent.svg">
-  <img alt="正在做：afterglow——开源：固件、手机控制页面和 Afterglow Studio 源代码按 MIT 许可证发布（2026-11-18）。" src="./assets/now-light-transparent.svg" width="100%">
+  <img alt="正在做：Trowoy-Rules——Review Claude routing reference and add registered network supplements（2026-11-20）。" src="./assets/now-light-transparent.svg" width="100%">
 </picture>
 </a>
 
@@ -73,7 +73,7 @@
   <source media="(max-width: 600px)" srcset="./assets/numbers-mobile-light-transparent.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/numbers-dark-transparent.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/numbers-light-transparent.svg">
-  <img alt="近 12 个月：457 次贡献，35 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
+  <img alt="近 12 个月：458 次贡献，36 天有提交，最长连续 20 天，共获得 43 颗星。" src="./assets/numbers-light-transparent.svg" width="100%">
 </picture>
 
 <p align="center"><sub>小工具，慢慢做。</sub></p>
